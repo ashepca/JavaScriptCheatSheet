@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <title>2.3 Events</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>         
+  </head>  
+  <body>
+    <div id="menu">
+      <h2 id="center">MENU</h2>
+      <h3>1. Javascript Language Fundamentals</h3>
+      <a href="variables.html"><h4>1.1. Variables</h4></a>
+      <a href="operators.html"><h4>1.2. Operators</h4></a>
+      <a href="conditional.html"><h4>1.3. Conditional Statements</h4></a>
+      <a href="loops.html"><h4>1.4. Loops</h4></a>
+      <a href="functions.html"><h4>1.5. Functions</h4></a>
+      <a href="objects.html"><h4>1.6. JS Objects General Overview</h4></a>
+      <a href="built.html"><h4>1.7. JS Built-in Objects</h4></a>
+      <a href="array.html"><h4>1.8. Array Object</h4></a>
+      <a href="string.html"><h4>1.9. String Object</h4></a>
+      <h3>2. Javascript - Web Browser - Web Document Interaction</h3>
+      <a href="browser.html"><h4>2.1. Browser Objects</h4></a>
+      <a href="html.html"><h4>2.2. HTML Objects</h4></a>
+      <a href="events.html"><h4>2.3. Events</h4></a>
+      <a href="AndrewShepherd_JSFinal.html"><h3>Return to Title Page</h3></a>     
+    </div>
+    <div class="main">
+      <h1>2.3 Events</h1>
+      <p>In Javascript, <b>Events</b> are things that happen that can be used to control the flow of the program.  For example when the user clicks on an area of a webpage, presses a key, moves the mouse pointer over an item, or when a web page loads, these events can trigger parts of the program to execute.</p>   
+      </br>
+      <h2>General Syntax</h2>
+      <p>There are many types of events.  Common events include onclick, onmouseover, onload, onmouseout and onkeydown.  The event is added to javascript by adding the attribute to the applicable html tag with a value that triggers javacsript code, like this:</p>
+      <p class="js">&lt;img onclick="myFunction()"/&gt</p>
+      <p>When the use clicks on the image, the javascript function myFunction() will execute.</p>
+      </br>
+      <h2>Methods</h2>
+      <p>Events do not have methods.</p>
+      </br>
+      <h2>Properties</h2>
+      <p>Events do not have properties.</p>
+      </br>
+      <h2>Examples</h2>
+      <p id="exampleHTML">Here is an example of Javascript code:</p>
+      <p class="js">//script example for 2.3. Events</p>
+      <p class="js">function showExample() {</p>
+      <p class="js2">alert("Click the button to get this alert was already a demonstration of an event, but let's explore events some more.  Run your mouse over and out of the black circle.");</p>
+      <p class="js">}</p>
+      <p class="js">function growImg(that) {</p>
+      <p class="js2">that.height = (that.height * 2);</p>
+      <p class="js">}</p>
+      <p class="js">function shrinkImg(that) {</p>
+      <p class="js2">that.height = (that.height / 2);</p>
+      <p class="js">}</p>            
+      <script>
+        //script example for 2.3. Events
+        function showExample() {
+          alert("Click the button to get this alert was already a demonstration of an event, but let's explore events some more.  Run your mouse over and out of the black circle.");
+        }
+        function growImg(that) {
+          that.height = (that.height * 2);
+        }
+        function shrinkImg(that) {
+          that.height = (that.height / 2);   
+        }
+      </script>
+      <input type="button" value="Click to see this Javascript example in action!" onclick="showExample()"/>
+      <img src="black_circle.png" onmouseover="growImg(this)" onmouseout="shrinkImg(this)"/> 
+    </div>  
+  </body>
+</html>

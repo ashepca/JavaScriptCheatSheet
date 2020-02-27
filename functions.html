@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <title>1.5 Functions</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>         
+  </head>  
+  <body>
+    <div id="menu">
+      <h2 id="center">MENU</h2>
+      <h3>1. Javascript Language Fundamentals</h3>
+      <a href="variables.html"><h4>1.1. Variables</h4></a>
+      <a href="operators.html"><h4>1.2. Operators</h4></a>
+      <a href="conditional.html"><h4>1.3. Conditional Statements</h4></a>
+      <a href="loops.html"><h4>1.4. Loops</h4></a>
+      <a href="functions.html"><h4>1.5. Functions</h4></a>
+      <a href="objects.html"><h4>1.6. JS Objects General Overview</h4></a>
+      <a href="built.html"><h4>1.7. JS Built-in Objects</h4></a>
+      <a href="array.html"><h4>1.8. Array Object</h4></a>
+      <a href="string.html"><h4>1.9. String Object</h4></a>
+      <h3>2. Javascript - Web Browser - Web Document Interaction</h3>
+      <a href="browser.html"><h4>2.1. Browser Objects</h4></a>
+      <a href="html.html"><h4>2.2. HTML Objects</h4></a>
+      <a href="events.html"><h4>2.3. Events</h4></a>
+      <a href="AndrewShepherd_JSFinal.html"><h3>Return to Title Page</h3></a>     
+    </div>
+    <div class="main">
+      <h1>1.5 Functions</h1>
+      <p>Javascript <b>functions</b> are blocks of code that performs a particular task by takeing information, processing it and producing a result.  Functions are efficient ways of writing code, as they can be reused over and over, even in different programs.  Some functions are built into Javascript, others you write yourself.</p>  
+      </br>
+      <h2>General Syntax</h2>
+      <p>Functions are written like this:</p>
+      <p class="js">function functionName(function parameters) {</p>
+      <p class="js2">executable code within the function;</p>
+      <p class="js2">return variable;</p>
+      <p class="js">}</p>
+      </br>
+      <h2>Methods</h2>
+      <p>Values are passed into functions by listing the parameters within the round brackets ().  These values are then available to be used within the function.  Values do not have to be passed to a function, however, the parameters passed much match the parameters in the function as written.</p>
+      <p>To call a function, or invoke it, within a program, the function name is written with round brackets () with or without parameter values as required.  This may be used to simply xecute a block of code, such as:</p>
+      <p class="js">myFunction(3);</p>
+      <p>Or, a function may be used to assign a returned value to a variable, such as:</p>
+      <p class="js">var pyjamas = myFunction(red, fuzzy);</p> 
+      <p>Return statements are optional.  If no value is returned, functions return a value of undefined.</p>
+      </br>
+      <h2>Properties</h2>
+      <p>Functions have scope, similarly to variables.  Any functions written outside of a function have global scope and are available to be called, or invoked, from any where within the program.  Functions written inside other functions have local scope and are only available to be called from within that function.</p>
+      </br>
+      <h2>Examples</h2>
+      </p>Here is an example of Javascript code:</p>
+      <p class="js">//script example for 1.5. Functions</p>
+      <p class="js">function showExample() {</p>
+      <p class="js2">alert("Let's use a function to convert kilometers to miles.");
+      <p class="js2">function convert(kilo) {
+      <p class="js3">var miles = kilo / 1.6;
+      <p class="js3">return miles;       
+      <p class="js2">}        
+      <p class="js2">var kms = parseInt(prompt("Enter a number of kilometers"));
+      <p class="js2">var miles = convert(kms);
+      <p class="js2">alert(kms + " kilometers is equal to " + miles + " miles."); 
+      <p class="js">}</p>        
+      <script>
+        //script example for 1.5. Functions
+        function showExample() {
+          alert("Let's use a function to convert kilometers to miles.");
+          function convert(kilo) {
+            var miles = kilo / 1.6;
+            return miles;       
+          }        
+          var kms = parseInt(prompt("Enter a number of kilometers"));
+          var miles = convert(kms);
+          alert(kms + " kilometers is equal to " + miles + " miles.");      
+        }
+      </script>
+      <input type="button" value="Click to see this Javascript example in action!" onclick="showExample()"/> 
+    </div>  
+  </body>
+</html>

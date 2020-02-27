@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <title>1.4 Loops</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>         
+  </head>  
+  <body>
+    <div id="menu">
+      <h2 id="center">MENU</h2>
+      <h3>1. Javascript Language Fundamentals</h3>
+      <a href="variables.html"><h4>1.1. Variables</h4></a>
+      <a href="operators.html"><h4>1.2. Operators</h4></a>
+      <a href="conditional.html"><h4>1.3. Conditional Statements</h4></a>
+      <a href="loops.html"><h4>1.4. Loops</h4></a>
+      <a href="functions.html"><h4>1.5. Functions</h4></a>
+      <a href="objects.html"><h4>1.6. JS Objects General Overview</h4></a>
+      <a href="built.html"><h4>1.7. JS Built-in Objects</h4></a>
+      <a href="array.html"><h4>1.8. Array Object</h4></a>
+      <a href="string.html"><h4>1.9. String Object</h4></a>
+      <h3>2. Javascript - Web Browser - Web Document Interaction</h3>
+      <a href="browser.html"><h4>2.1. Browser Objects</h4></a>
+      <a href="html.html"><h4>2.2. HTML Objects</h4></a>
+      <a href="events.html"><h4>2.3. Events</h4></a>
+      <a href="AndrewShepherd_JSFinal.html"><h3>Return to Title Page</h3></a>     
+    </div>
+    <div class="main">
+      <h1>1.4 Loops</h1>
+      <p>In Javascript, <b>Loops</b> are used to repeat blocks of code instead of having to retype the same code.  The looped part of the code will continue to be repeated until the test condition is no longer true.  There are different types of Loops, including the for loop, the for ... in loop, the while loop and the do ... while loop.</p>
+      </br>
+      <h2>General Syntax</h2>
+      <p>The for loop is written like this:</p>
+      <p class="js">for(initialize the loop variable; loop test condition; increment the loop variable) {</p>
+      <p class="js2">executable code within the loop;</p>
+      <p class="js">}</p>
+      <p>The while loop is written like this:<p>
+      <p class="js">while(test condition){</p>
+      <p class="js2">executable code while test condition is true</p>
+      <p class="js">}</p>
+      </br>
+      <h2>Methods</h2>
+      <p>Infinte loops may occur if the code is written in such a way that the test condition will always be true.  Infinite loops may crash your browser.  To exit an infinite loop you must shut down the program.</p>
+      <p>Break statements within if statements may be used in loops to exit the loop and proceed to the closing curly { bracket, even if the test condition of the outer loop were still true.</p>
+      <p>Conntinue statements stop the loop from executing at that point, but they return to the top of the loop and the test condition, instead of exiting the loop altogether.</p>
+      </br>
+      <h2>Properties</h2>
+      <p>Loops do not have properties.</p>
+      </br>
+      <h2>Examples</h2>
+      </p>Here is an example of Javascript code:</p>
+      <p class="js">//script example for 1.4. Loops</p>
+      <p class="js">function showExample() {</p>
+      <p class="js2">alert("Let's use a loop to count down.");</p>
+      <p class="js2">var cycles = parseInt(prompt("Pick a positive number:"));</p>      
+      <p class="js2">for(x = cycles; x > 0; x--) {</p>
+      <p class="js3">alert(x);</p>
+      <p class="js2">}</p>
+      <p class="js2">alert("Blast Off!");</p>
+      <p class="js">}</p>        
+      <script>
+        //script example for 1.4. Loops
+        function showExample() {
+          alert("Let's use a loop to count down.");
+          var cycles = parseInt(prompt("Pick a positive number:"));      
+          for(x = cycles; x > 0; x--) {
+            alert(x);
+          }
+          alert("Blast Off!");
+        }
+      </script>
+      <input type="button" value="Click to see this Javascript example in action!" onclick="showExample()"/>        
+    </div>  
+  </body>
+</html>

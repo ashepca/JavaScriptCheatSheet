@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <title>1.2 Operators</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>         
+  </head>  
+  <body>
+    <div id="menu">
+      <h2 id="center">MENU</h2>
+      <h3>1. Javascript Language Fundamentals</h3>
+      <a href="variables.html"><h4>1.1. Variables</h4></a>
+      <a href="operators.html"><h4>1.2. Operators</h4></a>
+      <a href="conditional.html"><h4>1.3. Conditional Statements</h4></a>
+      <a href="loops.html"><h4>1.4. Loops</h4></a>
+      <a href="functions.html"><h4>1.5. Functions</h4></a>
+      <a href="objects.html"><h4>1.6. JS Objects General Overview</h4></a>
+      <a href="built.html"><h4>1.7. JS Built-in Objects</h4></a>
+      <a href="array.html"><h4>1.8. Array Object</h4></a>
+      <a href="string.html"><h4>1.9. String Object</h4></a>
+      <h3>2. Javascript - Web Browser - Web Document Interaction</h3>
+      <a href="browser.html"><h4>2.1. Browser Objects</h4></a>
+      <a href="html.html"><h4>2.2. HTML Objects</h4></a>
+      <a href="events.html"><h4>2.3. Events</h4></a>
+      <a href="AndrewShepherd_JSFinal.html"><h3>Return to Title Page</h3></a>     
+    </div>
+    <div class="main">
+      <h1>1.2 Operators</h1>
+      <p>Javascript uses several types of <b>operators</b>, including Arithmetic, Assignment, Comparision and Logical.  Operators 'operate' on the values you provide them.  Arithmetic operators are used just like in math to perform arithmetic on numbers.  Assignment operators are used to assign values to variables.  Comparision and Logical operators compare values to test for true or false.</p> 
+      </br>
+      <h2>General Syntax</h2>
+      <p>The Arithmetic Operators are:</p>
+      <ul>
+        <li>+ addition</li>
+        <li>- subtraction</li>
+        <li>* multiplication</li>
+        <li>/ division</li>
+        <li>% modulus</li>
+        <li>++ increment</li>
+        <li>++ decrement</li>
+      </ul>
+      <p>The Assignment Operators are:</p>
+      <ul>
+        <li>= assigns a value</li>
+        <li>+= adds and assigns</li>
+        <li>-= subtracts and assigns</li>
+        <li>*= multiplies and assigns</li>
+        <li>/= divides and assigns</li>
+        <li>%= assigns a remainder</li>
+      </ul>
+      <p>The Comparison Operators are:</p>
+      <ul>
+        <li>== equal to</li>
+        <li>=== equal value and type</li>
+        <li>!= not equal</li>
+        <li>!== not equal value or type</li>
+        <li>> greater than</li>
+        <li>< less than</li>
+        <li>>= greater than or equal to</li>
+        <li><= less than or equal to</li>
+        <li>? ternary operator</li>
+      </ul>
+      <p>The Logical Operators are:</p>
+      <ul>
+        <li>&& logical and</li>
+        <li>|| logical or</li>
+        <li>! logical not</li>
+      </ul>             
+      </br>   
+      <h2>Methods</h2>
+      <p>Operators have precedence.  When Javascript code is exectuted operators with higher precedence are performed first.  If two operators have equal precedence, they are performed left to right.  Precendence can be changed by using round brackets.  For example:</p>
+      <p class="js">var pizza;</p>
+      <p class="js">var pasta;</p>
+      <p class="js">pizza = 2 + 2 * 7;</p>
+      <p class="js">pasta = (2 + 2) * 7;</p>  
+      <p>The value of pizza is 16 because the multiplication has higher precedence and is performed before the addition.  However, pasta is 28.</p>
+      <p>Precendence for the most common used operations occurs is in this order:</p>
+      <ul>
+        <li>()</li>
+        <li>++, --, !</li>
+        <li>*, /, %</li>
+        <li>+, -</li>
+        <li><, <=, >, >=</li>
+        <li>==, ===, !=, !==</li>
+        <li>&&, ||</li>
+        <li>all assignment operators</li>
+      </ul>            
+      </br>
+      <h2>Properties</h2>
+      <p>Operators do not have properties.</p> 
+      </br>
+      <h2>Examples</h2>
+      </p>Here is an example of Javascript code:</p>
+      <p class="js">//script example for 1.2. Operators</p>
+      <p class="js">function showExample() {</p>
+      <p class="js2">alert("Let's use some operators on some values.");</p>
+      <p class="js2">var one = parseInt(prompt("Enter a positive number value for variable one:"));</p>
+      <p class="js2">var two = parseInt(prompt("Enter a positive number value for variable two:"));</p>
+      <p class="js2">var adding = one + two;</p>
+      <p class="js2">var mult = one * two;</p>
+      <p class="js2">alert("Thank-you.  Here are the results of some operations:\nAdding together " + one + " and " + two +
+            " equals: " + adding + "\nMultiplying together " + one + " and " + two + " equals: " + mult);</p>
+      <p class="js">}</p>          
+      <script>
+        //script example for 1.2. Operators
+        function showExample() {
+          alert("Let's use some operators on some values.");
+          var one = parseInt(prompt("Enter a positive number value for variable one:"));
+          var two = parseInt(prompt("Enter a positive number value for variable two:"));
+          var adding = one + two;
+          var mult = one * two;
+          alert("Thank-you.  Here are the results of some operations:\nAdding together " + one + " and " + two +
+            " equals: " + adding + "\nMultiplying together " + one + " and " + two + " equals: " + mult);
+        }
+      </script>
+      <input type="button" value="Click to see this Javascript example in action!" onclick="showExample()"/>
+    </div>  
+  </body>
+</html>
